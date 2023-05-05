@@ -58,6 +58,24 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Deployment
+$ cd cd .\k8s\
+$ kubectl create -f deployment.yaml
+$ kubectl create -f service.yaml
+
+## Test on Local (Minikube)
+$ minikube service nestjs-k8s
+
+## Deployment On GKE
+- Install gcloud
+- Copy cluster connect on cloud google kubernetes cluster
+- kubectl create -f deployment.yaml
+- kubectl create -f service.yaml
+
+## Move kubectl command to Minikube
+$ kubectl config get-contexts
+$ kubectl config use-context CONTEXT_NAME
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
