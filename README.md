@@ -59,22 +59,34 @@ $ npm run test:cov
 ```
 
 ## Deployment
+
+```bash
 $ cd cd .\k8s\
 $ kubectl create -f deployment.yaml
 $ kubectl create -f service.yaml
+```
+
 
 ## Test on Local (Minikube)
+
+```bash
 $ minikube service nestjs-k8s
+```
 
 ## Deployment On GKE
 - Install gcloud
 - Copy cluster connect on cloud google kubernetes cluster
+- Run those command:
+```bash
 - kubectl create -f deployment.yaml
 - kubectl create -f service.yaml
+```
 
 ## Move kubectl command to Minikube
+```bash
 $ kubectl config get-contexts
 $ kubectl config use-context CONTEXT_NAME
+```
 
 ## Support
 
